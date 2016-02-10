@@ -1,1 +1,9 @@
 c:\users\usuario\documents\visual studio 2015\Projects\Biek\Biek\bin\Debug\Biek.exe.config
+C:\Users\usuario\documents\visual studio 2015\Projects\Biek\Biek\bin\Debug\Biek.exe
+C:\Users\usuario\documents\visual studio 2015\Projects\Biek\Biek\bin\Debug\Biek.pdb
+C:\Users\usuario\documents\visual studio 2015\Projects\Biek\Biek\obj\Debug\Biek.csprojResolveAssemblyReference.cache
+C:\Users\usuario\documents\visual studio 2015\Projects\Biek\Biek\obj\Debug\Biek.Form1.resources
+C:\Users\usuario\documents\visual studio 2015\Projects\Biek\Biek\obj\Debug\Biek.Properties.Resources.resources
+C:\Users\usuario\documents\visual studio 2015\Projects\Biek\Biek\obj\Debug\Biek.csproj.GenerateResource.Cache
+C:\Users\usuario\documents\visual studio 2015\Projects\Biek\Biek\obj\Debug\Biek.exe
+C:\Users\usuario\documents\visual studio 2015\Projects\Biek\Biek\obj\Debug\Biek.pdb
