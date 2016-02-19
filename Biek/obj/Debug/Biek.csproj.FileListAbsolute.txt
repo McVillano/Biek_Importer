@@ -7,3 +7,5 @@ C:\Users\usuario\documents\visual studio 2015\Projects\Biek\Biek\obj\Debug\Biek.
 C:\Users\usuario\documents\visual studio 2015\Projects\Biek\Biek\obj\Debug\Biek.csproj.GenerateResource.Cache
 C:\Users\usuario\documents\visual studio 2015\Projects\Biek\Biek\obj\Debug\Biek.exe
 C:\Users\usuario\documents\visual studio 2015\Projects\Biek\Biek\obj\Debug\Biek.pdb
+C:\Users\usuario\documents\visual studio 2015\Projects\Biek\Biek\obj\Debug\Biek.Form2.resources
+C:\Users\usuario\documents\visual studio 2015\Projects\Biek\Biek\obj\Debug\Biek.Form3.resources

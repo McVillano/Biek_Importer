@@ -43,6 +43,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.datePickFin = new System.Windows.Forms.DateTimePicker();
             this.buttonExportar = new System.Windows.Forms.Button();
+            this.startInformaticaSLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +64,7 @@
             this.configuraciónToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
             // configuraciónToolStripMenuItem
@@ -71,6 +72,7 @@
             this.configuraciónToolStripMenuItem.Name = "configuraciónToolStripMenuItem";
             this.configuraciónToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.configuraciónToolStripMenuItem.Text = "Configuración";
+            this.configuraciónToolStripMenuItem.Click += new System.EventHandler(this.configuraciónToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -81,8 +83,10 @@
             // 
             // acercaDeToolStripMenuItem
             // 
+            this.acercaDeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.startInformaticaSLToolStripMenuItem});
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
             this.acercaDeToolStripMenuItem.Text = "Acerca de...";
             // 
             // contextMenuStrip1
@@ -151,6 +155,13 @@
             this.buttonExportar.UseVisualStyleBackColor = true;
             this.buttonExportar.Click += new System.EventHandler(this.buttonExportar_Click);
             // 
+            // startInformaticaSLToolStripMenuItem
+            // 
+            this.startInformaticaSLToolStripMenuItem.Name = "startInformaticaSLToolStripMenuItem";
+            this.startInformaticaSLToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.startInformaticaSLToolStripMenuItem.Text = "Start Informatica S.L.";
+            this.startInformaticaSLToolStripMenuItem.Click += new System.EventHandler(this.startInformaticaSLToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -190,6 +201,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker datePickFin;
         private System.Windows.Forms.Button buttonExportar;
+        private System.Windows.Forms.ToolStripMenuItem startInformaticaSLToolStripMenuItem;
     }
 }
 
