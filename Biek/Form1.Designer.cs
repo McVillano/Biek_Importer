@@ -35,6 +35,7 @@
             this.configuraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.startInformaticaSLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.buttonCarpeta = new System.Windows.Forms.Button();
             this.textPath = new System.Windows.Forms.TextBox();
@@ -43,7 +44,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.datePickFin = new System.Windows.Forms.DateTimePicker();
             this.buttonExportar = new System.Windows.Forms.Button();
-            this.startInformaticaSLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textEmpresa = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,14 +72,14 @@
             // configuraciónToolStripMenuItem
             // 
             this.configuraciónToolStripMenuItem.Name = "configuraciónToolStripMenuItem";
-            this.configuraciónToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.configuraciónToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.configuraciónToolStripMenuItem.Text = "Configuración";
             this.configuraciónToolStripMenuItem.Click += new System.EventHandler(this.configuraciónToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -88,6 +90,13 @@
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
             this.acercaDeToolStripMenuItem.Text = "Acerca de...";
+            // 
+            // startInformaticaSLToolStripMenuItem
+            // 
+            this.startInformaticaSLToolStripMenuItem.Name = "startInformaticaSLToolStripMenuItem";
+            this.startInformaticaSLToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.startInformaticaSLToolStripMenuItem.Text = "Start Informatica S.L.";
+            this.startInformaticaSLToolStripMenuItem.Click += new System.EventHandler(this.startInformaticaSLToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 
@@ -148,25 +157,36 @@
             // buttonExportar
             // 
             this.buttonExportar.Image = global::Biek.Properties.Resources.export_button;
-            this.buttonExportar.Location = new System.Drawing.Point(345, 55);
+            this.buttonExportar.Location = new System.Drawing.Point(454, 53);
             this.buttonExportar.Name = "buttonExportar";
-            this.buttonExportar.Size = new System.Drawing.Size(218, 46);
+            this.buttonExportar.Size = new System.Drawing.Size(109, 48);
             this.buttonExportar.TabIndex = 5;
             this.buttonExportar.UseVisualStyleBackColor = true;
             this.buttonExportar.Click += new System.EventHandler(this.buttonExportar_Click);
             // 
-            // startInformaticaSLToolStripMenuItem
+            // label3
             // 
-            this.startInformaticaSLToolStripMenuItem.Name = "startInformaticaSLToolStripMenuItem";
-            this.startInformaticaSLToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
-            this.startInformaticaSLToolStripMenuItem.Text = "Start Informatica S.L.";
-            this.startInformaticaSLToolStripMenuItem.Click += new System.EventHandler(this.startInformaticaSLToolStripMenuItem_Click);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(345, 61);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(103, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Numero de Empresa";
+            // 
+            // textEmpresa
+            // 
+            this.textEmpresa.Location = new System.Drawing.Point(348, 81);
+            this.textEmpresa.Name = "textEmpresa";
+            this.textEmpresa.Size = new System.Drawing.Size(100, 20);
+            this.textEmpresa.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(575, 111);
+            this.Controls.Add(this.textEmpresa);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.buttonExportar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -175,9 +195,13 @@
             this.Controls.Add(this.textPath);
             this.Controls.Add(this.buttonCarpeta);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GENERADOR CSV BIEK";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -202,6 +226,8 @@
         private System.Windows.Forms.DateTimePicker datePickFin;
         private System.Windows.Forms.Button buttonExportar;
         private System.Windows.Forms.ToolStripMenuItem startInformaticaSLToolStripMenuItem;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textEmpresa;
     }
 }
 

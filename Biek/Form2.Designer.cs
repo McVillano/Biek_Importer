@@ -36,8 +36,8 @@
             this.textBBDD = new System.Windows.Forms.TextBox();
             this.textServer = new System.Windows.Forms.TextBox();
             this.textPass = new System.Windows.Forms.TextBox();
-            this.buttonCheck = new System.Windows.Forms.Button();
             this.textUsuario = new System.Windows.Forms.TextBox();
+            this.buttonCheck = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -101,6 +101,13 @@
             this.textPass.Size = new System.Drawing.Size(152, 20);
             this.textPass.TabIndex = 1;
             // 
+            // textUsuario
+            // 
+            this.textUsuario.Location = new System.Drawing.Point(156, 9);
+            this.textUsuario.Name = "textUsuario";
+            this.textUsuario.Size = new System.Drawing.Size(152, 20);
+            this.textUsuario.TabIndex = 1;
+            // 
             // buttonCheck
             // 
             this.buttonCheck.Image = global::Biek.Properties.Resources.Check_mark;
@@ -110,13 +117,6 @@
             this.buttonCheck.TabIndex = 2;
             this.buttonCheck.UseVisualStyleBackColor = true;
             this.buttonCheck.Click += new System.EventHandler(this.buttonCheck_Click);
-            // 
-            // textUsuario
-            // 
-            this.textUsuario.Location = new System.Drawing.Point(156, 9);
-            this.textUsuario.Name = "textUsuario";
-            this.textUsuario.Size = new System.Drawing.Size(152, 20);
-            this.textUsuario.TabIndex = 1;
             // 
             // Form2
             // 
@@ -132,6 +132,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;

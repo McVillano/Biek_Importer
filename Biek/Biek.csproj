@@ -103,6 +103,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BIEK.ico" />
+    <None Include="Resources\tarjetas visita genericas1.jpg" />
+    <None Include="Resources\tarjetas visita genericas.jpg" />
     <None Include="Resources\Check_mark.png" />
     <None Include="Resources\export_button.png" />
   </ItemGroup>
