@@ -24,6 +24,10 @@ namespace Biek
         {
             InitializeComponent();
             textPath.Text = path;
+            System.Globalization.CultureInfo customCulture = (System.Globalization.CultureInfo)System.Threading.Thread.CurrentThread.CurrentCulture.Clone();
+            customCulture.NumberFormat.NumberDecimalSeparator = ".";
+
+            System.Threading.Thread.CurrentThread.CurrentCulture = customCulture;
         }
 
         private void buttonCarpeta_Click(object sender, EventArgs e)
@@ -67,7 +71,7 @@ namespace Biek
 
             //Ruta hasta el archivo entera
             DateTime hoy = DateTime.Today;
-            string filemane = textEmpresa.Text+"RCTABI.TXT";
+            string filemane = textEmpresa.Text+"CTABI.TXT";
             string filePath = path+ "\\"+ filemane;
             textPath.Text = filePath;
 
@@ -79,7 +83,7 @@ namespace Biek
             StringBuilder csv = new StringBuilder();
             foreach( DataRow row in dt.Rows)
             {
-                string codigcta = "\"A" + row["codigo"].ToString() + "43" + row["codcliente"].ToString()+"\"";
+                string codigcta = "\"A" + row["codigo"].ToString() +"70500000\"";
                 string clavecta = "\"N\"";
                 string provecta = "43" + row["codcliente"].ToString();
                 string[] fecha =row["fecha"].ToString().Split(' ');
@@ -90,10 +94,10 @@ namespace Biek
                 string ibasecta1 = row["neto"].ToString();
                 string ibasecta2 = "0";
                 string ibasecta3 = "0";
-                string tipivcta1 = "0";
+                string tipivcta1 = "21";//iva
                 string tipivcta2 = "0";
                 string tipivcta3 = "0";
-                string ivaimcta1 = "0";
+                string ivaimcta1 = ((float.Parse(imporcta)*(float.Parse(tipivcta1))/100)).ToString("0.00");
                 string ivaimcta2 = "0";
                 string ivaimcta3 = "0";
                 string tiprecta1 = row["irpf"].ToString();
@@ -110,7 +114,7 @@ namespace Biek
                 string pobpro = "\"" + row["ciudad"].ToString()+ "\"";
                 string povpro = "\"" + row["provincia"].ToString()+ "\"";
                 string nifpro = "\"" + row["cifnif"].ToString()+ "\"";
-                string centro = "0";
+                string centro = "\"0\"";
 
                 //Vencimientos
                 string query2 = "SELECT codigo,fechav,importeeuros FROM reciboscli WHERE codigo LIKE '"+ row["codigo"].ToString()+"%'";
